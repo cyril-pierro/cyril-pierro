@@ -123,13 +123,17 @@ Core competencies include backend and full-stack engineering, artificial intelli
 ### 🔐 DevSecOps & Automation
 
 - CI/CD pipeline design and implementation
-- Infrastructure as Code (Terraform, CloudFormation)
+- Infrastructure as Code (Terraform, CloudFormation, Ansible)
 - Security-first development practices and SAST/DAST
 - Automated testing frameworks and quality assurance
 - Container orchestration (Docker, Kubernetes)
-- Application monitoring, logging, and observability
+- Application monitoring, logging, and observability (Prometheus, Grafana, SigNoz)
+- Alerting and incident management (Alertmanager)
+- Code quality and security scanning (SonarQube, OWASP ZAP)
+- Dependency vulnerability tracking and management
 - Workflow automation (Apache Airflow, n8n)
 - Shell scripting and automation tooling
+- Configuration management and provisioning (Ansible)
 
     </td>
   </tr>
@@ -240,8 +244,14 @@ Core competencies include backend and full-stack engineering, artificial intelli
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
         <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
         <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" />
+        <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white" alt="Ansible" />
         <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
         <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Apache Airflow" />
+        <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" />
+        <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" />
+        <img src="https://img.shields.io/badge/SigNoz-1D212D?style=flat-square&logo=signoz&logoColor=white" alt="SigNoz" />
+        <img src="https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white" alt="SonarQube" />
+        <img src="https://img.shields.io/badge/OWASP_ZAP-000000?style=flat-square&logo=owasp&logoColor=white" alt="OWASP ZAP" />
       </p>
     </td>
   </tr>
@@ -295,7 +305,7 @@ Sophisticated multi-agent orchestration platform that decomposes complex tasks a
 
 Command-line utility for performing Structured Entropy Analysis on molecular dynamics simulation data with YAML-based configuration for seamless workflow integration.
 
-**Technologies:** Python, CLI Development, Data Processing, YAML
+**
 
 ---
 
@@ -348,4 +358,5 @@ Production-ready RESTful API for book management with CRUD operations, authentic
 <br/>
 
 ##
+
 
