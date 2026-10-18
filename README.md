@@ -1,4 +1,3 @@
-
 <!-- Profile Header -->
 <p align="center">
   <img
@@ -161,9 +160,10 @@ Core competencies include backend and full-stack engineering, artificial intelli
 - IAM, security groups, and cloud governance
 - Application deployment and monitoring strategies
 
-    </td>
-  </tr>
-</table>
+      </td>
+
+    </tr>
+  </table>
 
 <br/>
 
@@ -265,77 +265,15 @@ Core competencies include backend and full-stack engineering, artificial intelli
 
 ## 🌟 Featured Projects
 
-### 💬 Real-Time Chat Application
-
-**Repository:** [chat_app_system](https://github.com/cyril-pierro/chat_app_system)
-
-Enterprise-grade real-time messaging platform with WebSocket communication, user authentication, and scalable architecture.
-
-**Technologies:** Python, FastAPI, WebSockets, PostgreSQL, Redis
-
----
-
-### 🎙️ Voice Document Assistant
-
-**Repository:** [voice-doc-assistant](https://github.com/cyril-pierro/voice-doc-assistant)
-
-AI-powered voice assistant leveraging RAG architecture for intelligent document interaction through natural language processing and real-time audio streaming.
-
-**Technologies:** Python, LangChain, OpenAI, Vector Databases, FastAPI
-
-**Key Features:** RAG implementation, semantic search, document processing, AI evaluation framework
-
----
-
-### 🤖 Multi-Agent System
-
-**Repository:** [multi-agent-system](https://github.com/cyril-pierro/multi-agent-system)
-
-Sophisticated multi-agent orchestration platform that decomposes complex tasks and coordinates specialized AI agents using real-time communication protocols.
-
-**Technologies:** Python, FastAPI, WebSockets, LangChain, Async Processing
-
-**Key Features:** Agent orchestration, task decomposition, real-time coordination
-
----
-
-### 🧬 SEA-CLI - Structured Entropy Analysis Tool
-
-**Repository:** [sea-cli](https://github.com/cyril-pierro/sea-cli)
-
-Command-line utility for performing Structured Entropy Analysis on molecular dynamics simulation data with YAML-based configuration for seamless workflow integration.
-
-**
-
----
-
-### 🐳 DIM - Docker Image Migrator
-
-**Repository:** [dim](https://github.com/cyril-pierro/dim)
-
-Automated Docker image migration tool for transferring container images across environments with minimal downtime.
-
-**Technologies:** Bash, Docker, Shell Scripting, DevOps Automation
-
----
-
-### ☁️ AWS Infrastructure Provisioning
-
-**Repository:** [AWS-Resources-Provisioning](https://github.com/cyril-pierro/AWS-Resources-Provisioning)
-
-Infrastructure as Code implementation for automated AWS resource provisioning and cloud environment management.
-
-**Technologies:** Terraform, AWS, CloudFormation, Infrastructure as Code
-
----
-
-### 🔧 RESTful API - Book Management System
-
-**Repository:** [Rest_api](https://github.com/cyril-pierro/Rest_api)
-
-Production-ready RESTful API for book management with CRUD operations, authentication, and database integration.
-
-**Technologies:** Go, Gin Framework, PostgreSQL, REST API Design
+| Project | Description |
+|---------|-------------|
+| **💬 Real-Time Chat Application**<br/>[chat_app_system](https://github.com/cyril-pierro/chat_app_system) | Enterprise-grade real-time messaging platform with WebSocket communication, user authentication, and scalable architecture.<br/>**Tech:** Python, FastAPI, WebSockets, PostgreSQL, Redis |
+| **🎙️ Voice Document Assistant**<br/>[voice-doc-assistant](https://github.com/cyril-pierro/voice-doc-assistant) | AI-powered voice assistant leveraging RAG architecture for intelligent document interaction through natural language processing and real-time audio streaming.<br/>**Tech:** Python, LangChain, OpenAI, Vector Databases, FastAPI<br/>**Key Features:** RAG implementation, semantic search, document processing, AI evaluation framework |
+| **🤖 Multi-Agent System**<br/>[multi-agent-system](https://github.com/cyril-pierro/multi-agent-system) | Sophisticated multi-agent orchestration platform that decomposes complex tasks and coordinates specialized AI agents using real-time communication protocols.<br/>**Tech:** Python, FastAPI, WebSockets, LangChain, Async Processing<br/>**Key Features:** Agent orchestration, task decomposition, real-time coordination |
+| **🧬 SEA-CLI - Structured Entropy Analysis Tool**<br/>[sea-cli](https://github.com/cyril-pierro/sea-cli) | Command-line utility for performing Structured Entropy Analysis on molecular dynamics simulation data with YAML-based configuration.<br/>**Tech:** Python, YAML, Molecular Dynamics, CLI |
+| **🐳 DIM - Docker Image Migrator**<br/>[dim](https://github.com/cyril-pierro/dim) | Automated Docker image migration tool for transferring container images across environments with minimal downtime.<br/>**Tech:** Bash, Docker, Shell Scripting, DevOps Automation |
+| **☁️ AWS Infrastructure Provisioning**<br/>[AWS-Resources-Provisioning](https://github.com/cyril-pierro/AWS-Resources-Provisioning) | Infrastructure as Code implementation for automated AWS resource provisioning and cloud environment management.<br/>**Tech:** Terraform, AWS, CloudFormation, Infrastructure as Code |
+| **🔧 RESTful API - Book Management System**<br/>[Rest_api](https://github.com/cyril-pierro/Rest_api) | Production-ready RESTful API for book management with CRUD operations, authentication, and database integration.<br/>**Tech:** Go, Gin Framework, PostgreSQL, REST API Design |
 
 <br/>
 
@@ -356,7 +294,3 @@ Production-ready RESTful API for book management with CRUD operations, authentic
 ---
 
 <br/>
-
-##
-
-
