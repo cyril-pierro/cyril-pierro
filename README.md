@@ -9,7 +9,7 @@
   />
 </p>
 
-<h1 align="center">Hi, I'm Cyril 👋</h1>
+<h1 align="center">Hi, I'm Per Badasu 👋</h1>
 
 <h3 align="center">
   Senior Software Engineer | Full-Stack Developer | AI Engineer
