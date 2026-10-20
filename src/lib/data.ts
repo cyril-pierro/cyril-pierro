@@ -158,6 +158,16 @@ export type LinkedInPost = {
 
 export const linkedinPosts: LinkedInPost[] = [
   {
+    title: "Independent Multi-Database Backup Pipeline with Apache Airflow",
+    summary:
+      "A fault-tolerant Airflow DAG orchestrating parallel backups across three database servers — SSHOperator isolation, branch-based alerting, and consolidated success reporting.",
+    tags: ["Apache Airflow", "Data pipelines", "SSHOperator", "Python"],
+    date: "20 Oct 2026",
+    dateTime: "2026-10-20",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_dataengineering-apacheairflow-python-share-7518305155553873921-qjkr/",
+    embedUrl: "https://www.linkedin.com/embed/feed/update/urn:li:share:7518305155553873921",
+  },
+  {
     title: "Voice-Native AI Document Assistant",
     summary:
       "A production-ready, voice-first RAG app built with FastAPI, WebSockets, and Gemini Live — bidirectional audio streaming, pgvector retrieval, and MLOps observability.",
@@ -165,8 +175,6 @@ export const linkedinPosts: LinkedInPost[] = [
     date: "9 Sep 2026",
     dateTime: "2026-09-09",
     url: "https://www.linkedin.com/posts/per-badasu-3380a9247_ai-generativeai-mlops-activity-7503579139711508480-sqQ1",
-    embedUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7503579139711508480",
   },
   {
     title: "Real-Time Streaming Multi-Agent System",
