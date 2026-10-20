@@ -6,7 +6,7 @@ export function Focus() {
     <section id="focus" className="section">
       <div className="shell">
         <Reveal>
-          <div className="eyebrow">05 — Current focus</div>
+          <div className="eyebrow">06 — Current focus</div>
           <h2 className="section-title mt-5 max-w-2xl">
             What I&rsquo;m building toward <span className="serif">right now</span>.
           </h2>

@@ -14,7 +14,7 @@ export function Skills() {
     <section id="skills" className="section">
       <div className="shell">
         <Reveal>
-          <div className="eyebrow">03 — Capabilities</div>
+          <div className="eyebrow">04 — Capabilities</div>
           <div className="mt-5 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <h2 className="section-title max-w-2xl">
               The stack behind the <span className="serif">systems</span>.

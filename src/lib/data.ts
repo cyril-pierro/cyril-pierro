@@ -122,6 +122,30 @@ export const projects: Project[] = [
 
 export const categories = ["All", "AI & ML", "Backend", "Cloud & DevOps"] as const;
 
+export type Publication = {
+  title: string;
+  date: string;
+  dateTime: string;
+  publisher: string;
+  link: string;
+  summary: string;
+  tags: string[];
+};
+
+export const publications: Publication[] = [
+  {
+    title:
+      "Structured Entropy Analysis (SEA): A computational framework for latent biomolecular insights beyond conventional descriptors in molecular dynamics simulations",
+    date: "27 Feb 2026",
+    dateTime: "2026-02-27",
+    publisher: "Elsevier",
+    link: "https://www.sciencedirect.com/science/article/abs/pii/S1093326326000641",
+    summary:
+      "Introduces Structured Entropy Analysis, a computational framework that surfaces latent biomolecular insights from molecular dynamics simulations beyond conventional descriptors.",
+    tags: ["Molecular dynamics", "Entropy analysis", "Biomolecular simulation", "Computational framework"],
+  },
+];
+
 export type Skill = {
   title: string;
   description: string;

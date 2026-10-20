@@ -6,6 +6,7 @@ import { Icon } from "./icons";
 
 const sections = [
   { id: "work", label: "Work" },
+  { id: "publications", label: "Publications" },
   { id: "skills", label: "Skills" },
   { id: "about", label: "About" },
   { id: "focus", label: "Focus" },

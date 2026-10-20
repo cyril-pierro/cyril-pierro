@@ -1234,6 +1234,110 @@ section[id] {
 }
 
 /* ------------------------------------------------------------------ */
+/*  Publications                                                       */
+/* ------------------------------------------------------------------ */
+
+.pub-list {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.pub-card {
+  position: relative;
+  display: block;
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line);
+  background: radial-gradient(110% 140% at 100% 0%, var(--glow-2), transparent 55%),
+    linear-gradient(180deg, var(--panel-2), color-mix(in srgb, var(--panel) 60%, transparent));
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s, box-shadow 0.4s;
+}
+
+.pub-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow);
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.pub-index {
+  color: var(--accent);
+}
+
+.pub-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.15rem;
+  max-width: 72ch;
+  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.32;
+}
+
+.pub-title svg {
+  flex: none;
+  margin-top: 0.25rem;
+  color: var(--faint);
+  transition: color 0.3s, transform 0.3s;
+}
+
+.pub-card:hover .pub-title svg {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.pub-summary {
+  margin-top: 0.9rem;
+  max-width: 68ch;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.pub-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------------ */
 /*  Focus                                                              */
 /* ------------------------------------------------------------------ */
 
