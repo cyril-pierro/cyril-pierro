@@ -296,6 +296,7 @@ export const skills: Skill[] = [
       "Secure pipelines from commit to production, with the observability to know what shipped and how it behaves.",
     tags: [
       "CI/CD",
+      "Git",
       "GitHub Actions",
       "SAST / DAST",
       "SonarQube",
