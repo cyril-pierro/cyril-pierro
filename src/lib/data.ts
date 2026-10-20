@@ -146,6 +146,71 @@ export const publications: Publication[] = [
   },
 ];
 
+export type LinkedInPost = {
+  title: string;
+  summary: string;
+  tags: string[];
+  date: string;
+  dateTime: string;
+  url: string;
+  embedUrl?: string;
+};
+
+export const linkedinPosts: LinkedInPost[] = [
+  {
+    title: "Voice-Native AI Document Assistant",
+    summary:
+      "A production-ready, voice-first RAG app built with FastAPI, WebSockets, and Gemini Live — bidirectional audio streaming, pgvector retrieval, and MLOps observability.",
+    tags: ["FastAPI", "WebSockets", "RAG", "Gemini Live"],
+    date: "9 Sep 2026",
+    dateTime: "2026-09-09",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_ai-generativeai-mlops-activity-7503579139711508480-sqQ1",
+    embedUrl:
+      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7503579139711508480",
+  },
+  {
+    title: "Real-Time Streaming Multi-Agent System",
+    summary:
+      "A streaming multi-agent platform built to defeat LLM latency, with isolated multiprocessing workers, async Redis state, and a Planner → Executor → Aggregator workflow.",
+    tags: ["Multi-agent", "Async", "Redis", "FastAPI"],
+    date: "22 Oct 2025",
+    dateTime: "2025-10-22",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_python-fastapi-websockets-activity-7386785544346705920-FB3M",
+  },
+  {
+    title: "Adaptive Bitrate (ABR) Streaming Backend",
+    summary:
+      "An HLS streaming backend that serves manifests and media segments dynamically, adapting video quality to network conditions for a smoother viewing experience.",
+    tags: ["HLS", "Streaming", "FastAPI"],
+    date: "21 Oct 2025",
+    dateTime: "2025-10-21",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_fastapi-hls-abr-activity-7386411144871305216-rGLB",
+  },
+  {
+    title: "Grafana, Prometheus & Alertmanager in Production",
+    summary:
+      "Downtime strikes fast — a bulletproof on-prem monitoring stack with Grafana, Prometheus, and Alertmanager is what keeps DevOps and SRE teams ahead of it.",
+    tags: ["Grafana", "Prometheus", "Alertmanager", "SRE"],
+    date: "20 May 2024",
+    dateTime: "2024-05-20",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_devops-sre-monitoring-ugcPost-7198256116865097728-0Qhk/",
+  },
+  {
+    title: "Selfie Voting System",
+    summary:
+      "A Valentine's Day voting app with real-time camera capture, authentication, live voting, and analytics — built on Next.js, Prisma, Material UI, and PostgreSQL.",
+    tags: ["Next.js", "Prisma", "PostgreSQL"],
+    date: "14 Feb 2025",
+    dateTime: "2025-02-14",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_for-valentines-day-i-developed-a-selfie-ugcPost-7296246692901748736-MQMK/",
+  },
+];
+
+export function withCampaign(url: string) {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}utm_source=portfolio&utm_medium=website&utm_campaign=featured_linkedin`;
+}
+
 export type Skill = {
   title: string;
   description: string;

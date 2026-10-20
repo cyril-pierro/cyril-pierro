@@ -7,7 +7,7 @@ export function Contact() {
     <section id="contact" className="section">
       <div className="shell">
         <Reveal>
-          <div className="eyebrow">07 — Contact</div>
+          <div className="eyebrow">08 — Contact</div>
         </Reveal>
 
         <Reveal delay={60}>

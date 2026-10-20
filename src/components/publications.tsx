@@ -7,7 +7,7 @@ export function Publications() {
     <section id="publications" className="section">
       <div className="shell">
         <Reveal>
-          <div className="eyebrow">03 — Publications</div>
+          <div className="eyebrow">04 — Publications</div>
           <div className="mt-5 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <h2 className="section-title max-w-2xl">
               Peer-reviewed <span className="serif">research</span>.

@@ -6,7 +6,7 @@ export function About() {
     <section id="about" className="section">
       <div className="shell">
         <Reveal>
-          <div className="eyebrow">05 — About</div>
+          <div className="eyebrow">06 — About</div>
         </Reveal>
 
         <div className="about-grid mt-8">
