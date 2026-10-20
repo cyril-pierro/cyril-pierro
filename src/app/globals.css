@@ -921,6 +921,20 @@ section[id] {
   display: none;
 }
 
+.project--static {
+  cursor: default;
+}
+
+.project--static:hover {
+  transform: none;
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+.project--static:hover::before {
+  opacity: 0;
+}
+
 .project-head {
   display: flex;
   align-items: center;

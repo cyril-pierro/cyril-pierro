@@ -169,7 +169,7 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
     <div className="project-body">
       <h3 className="project-title">
         <span>{project.name}</span>
-        <Icon name="arrow-up-right" size={20} />
+        {project.link ? <Icon name="arrow-up-right" size={20} /> : null}
       </h3>
       <p className="project-desc">{project.description}</p>
       <ul className="project-highlights">
@@ -187,38 +187,45 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
     </div>
   );
 
+  const content = (
+    <>
+      <div className="project-head">
+        <span className="project-index">{project.index}</span>
+        <span>{project.category}</span>
+      </div>
+      {project.size === "wide" ? (
+        <div className="project-inner">
+          <div>{body}</div>
+          <ProjectArt art={project.art} />
+        </div>
+      ) : (
+        body
+      )}
+    </>
+  );
+
   return (
     <Reveal delay={delay} className={project.size === "wide" ? "work-cell-wide" : "work-cell"}>
-      <a
-        href={project.repo}
-        target="_blank"
-        rel="noopener noreferrer"
-        onMouseMove={handleMove}
-        className={`project ${project.size === "wide" ? "project--wide" : ""}`}
-        aria-label={`${project.name} — open repository on GitHub`}
-        style={{ height: "100%" } as CSSProperties}
-      >
-        {project.size === "wide" ? (
-          <>
-            <div className="project-head">
-              <span className="project-index">{project.index}</span>
-              <span>{project.category}</span>
-            </div>
-            <div className="project-inner">
-              <div>{body}</div>
-              <ProjectArt art={project.art} />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="project-head">
-              <span className="project-index">{project.index}</span>
-              <span>{project.category}</span>
-            </div>
-            {body}
-          </>
-        )}
-      </a>
+      {project.link ? (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseMove={handleMove}
+          className={`project ${project.size === "wide" ? "project--wide" : ""}`}
+          aria-label={`${project.name} — ${project.linkLabel ?? "open repository on GitHub"}`}
+          style={{ height: "100%" } as CSSProperties}
+        >
+          {content}
+        </a>
+      ) : (
+        <div
+          className={`project project--static ${project.size === "wide" ? "project--wide" : ""}`}
+          style={{ height: "100%" } as CSSProperties}
+        >
+          {content}
+        </div>
+      )}
     </Reveal>
   );
 }
@@ -238,8 +245,8 @@ export function Work() {
               Systems I&rsquo;ve designed, built, and <span className="serif">shipped</span>.
             </h2>
             <p className="max-w-sm text-sm leading-relaxed text-muted">
-              A selection of open-source builds spanning AI pipelines, distributed backends, and
-              cloud automation. Each one solves a real problem end to end.
+              A selection of builds spanning AI pipelines, distributed backends, cloud
+              automation, and live company sites. Each one solves a real problem end to end.
             </p>
           </div>
         </Reveal>

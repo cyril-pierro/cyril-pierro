@@ -1,4 +1,4 @@
-export type Category = "AI & ML" | "Backend" | "Cloud & DevOps";
+export type Category = "AI & ML" | "Backend" | "Cloud & DevOps" | "Company Work";
 
 export type Project = {
   index: string;
@@ -9,7 +9,8 @@ export type Project = {
   description: string;
   highlights: string[];
   tags: string[];
-  repo: string;
+  link?: string;
+  linkLabel?: string;
   size: "wide" | "regular";
   art: "voice" | "agents" | "chat" | "cli" | "docker" | "cloud" | "api";
 };
@@ -30,7 +31,7 @@ export const projects: Project[] = [
       "AI evaluation framework",
     ],
     tags: ["Python", "LangChain", "OpenAI", "Vector DB", "FastAPI"],
-    repo: "https://github.com/cyril-pierro/voice-doc-assistant",
+    link: "https://github.com/cyril-pierro/voice-doc-assistant",
     size: "wide",
     art: "voice",
   },
@@ -44,7 +45,7 @@ export const projects: Project[] = [
       "A multi-agent platform that decomposes complex goals into sub-tasks and coordinates specialised agents over real-time WebSocket channels. Built on async processing primitives so agents can work concurrently, report progress, and hand results back to the orchestrator.",
     highlights: ["Agent orchestration", "Task decomposition", "Real-time coordination"],
     tags: ["Python", "FastAPI", "WebSockets", "LangChain", "Async"],
-    repo: "https://github.com/cyril-pierro/multi-agent-system",
+    link: "https://github.com/cyril-pierro/multi-agent-system",
     size: "regular",
     art: "agents",
   },
@@ -58,7 +59,7 @@ export const projects: Project[] = [
       "An enterprise-grade messaging platform built around WebSocket communication, secure user authentication, and a stateless service layer that scales horizontally. Presence, delivery, and history are handled with Redis and a normalised PostgreSQL schema.",
     highlights: ["WebSocket transport", "Auth & sessions", "Horizontally scalable"],
     tags: ["Python", "FastAPI", "WebSockets", "PostgreSQL", "Redis"],
-    repo: "https://github.com/cyril-pierro/chat_app_system",
+    link: "https://github.com/cyril-pierro/chat_app_system",
     size: "regular",
     art: "chat",
   },
@@ -72,7 +73,7 @@ export const projects: Project[] = [
       "A command-line tool for running Structured Entropy Analysis over molecular dynamics simulation data, driven by declarative YAML configuration. Designed for reproducible scientific workflows with clean, scriptable output.",
     highlights: ["YAML configuration", "Reproducible analysis", "Scriptable CLI"],
     tags: ["Python", "YAML", "Molecular Dynamics", "CLI"],
-    repo: "https://github.com/cyril-pierro/sea-cli",
+    link: "https://github.com/cyril-pierro/sea-cli",
     size: "regular",
     art: "cli",
   },
@@ -86,7 +87,7 @@ export const projects: Project[] = [
       "An automation utility that migrates Docker images across registries and environments with minimal downtime. Built to remove the manual, error-prone steps from release promotion and keep pipelines reproducible.",
     highlights: ["Zero-downtime migration", "Pipeline automation", "Registry agnostic"],
     tags: ["Bash", "Docker", "Shell", "DevOps"],
-    repo: "https://github.com/cyril-pierro/dim",
+    link: "https://github.com/cyril-pierro/dim",
     size: "regular",
     art: "docker",
   },
@@ -100,7 +101,7 @@ export const projects: Project[] = [
       "A Terraform-driven provisioning toolkit for standing up AWS environments — compute, storage, networking, and IAM — as versioned, reviewable infrastructure. Environments become reproducible instead of hand-built.",
     highlights: ["Infrastructure as Code", "Reusable modules", "Cloud governance"],
     tags: ["Terraform", "AWS", "CloudFormation", "IaC"],
-    repo: "https://github.com/cyril-pierro/AWS-Resources-Provisioning",
+    link: "https://github.com/cyril-pierro/AWS-Resources-Provisioning",
     size: "regular",
     art: "cloud",
   },
@@ -114,13 +115,67 @@ export const projects: Project[] = [
       "A production-ready RESTful API for book management with full CRUD operations, authentication, and PostgreSQL persistence. Written in Go with the Gin framework for a small, fast, dependency-light service.",
     highlights: ["RESTful design", "Authentication", "PostgreSQL persistence"],
     tags: ["Go", "Gin", "PostgreSQL", "REST"],
-    repo: "https://github.com/cyril-pierro/Rest_api",
+    link: "https://github.com/cyril-pierro/Rest_api",
     size: "regular",
     art: "api",
   },
+  {
+    index: "08",
+    slug: "foodhub",
+    name: "Food Hub",
+    category: "Company Work",
+    tagline: "Food ordering platform for Quantum Group Ltd.",
+    description:
+      "A live food-ordering website built for Quantum Group Ltd. Customers can browse the menu, place orders, and manage their food delivery experience through a fast, responsive storefront.",
+    highlights: ["Live production site", "Food ordering", "Responsive storefront"],
+    tags: ["Live site", "Food ordering", "Web application"],
+    link: "https://foodhub.archholdings.com/",
+    linkLabel: "visit the live site",
+    size: "regular",
+    art: "cloud",
+  },
+  {
+    index: "09",
+    slug: "arch-holdings-jobs",
+    name: "Arch Holdings Recruitment Portal",
+    category: "Company Work",
+    tagline: "Job portal for Arch Holdings",
+    description:
+      "A recruitment portal for Arch Holdings, giving candidates a single place to browse open roles and submit applications through a clear, mobile-friendly experience.",
+    highlights: ["Live production site", "Job listings", "Application flow"],
+    tags: ["Live site", "Job portal", "Recruitment", "Web application"],
+    link: "https://jobs.archholdings.com",
+    linkLabel: "visit the live site",
+    size: "regular",
+    art: "api",
+  },
+  {
+    index: "10",
+    slug: "sage-trading-distribution",
+    name: "Sage Trading Distribution System",
+    category: "Company Work",
+    tagline: "Microservice ERP for marketing, sales, trading, and accounts",
+    description:
+      "A microservice-based ERP platform supporting marketing and sales workflows, with Odoo as one of its core services. The Odoo service stores cargo, trading, and payment information that the trading and accounts departments rely on to run their processes.",
+    highlights: [
+      "Microservice architecture",
+      "Odoo integration",
+      "Cargo, trading & payments",
+      "Marketing & sales ERP apps",
+    ],
+    tags: ["Odoo", "Microservices", "ERP", "Trading"],
+    size: "regular",
+    art: "cloud",
+  },
 ];
 
-export const categories = ["All", "AI & ML", "Backend", "Cloud & DevOps"] as const;
+export const categories = [
+  "All",
+  "AI & ML",
+  "Backend",
+  "Cloud & DevOps",
+  "Company Work",
+] as const;
 
 export type Publication = {
   title: string;
@@ -365,7 +420,7 @@ export const focus = [
 
 export const stats = [
   { value: "6+", label: "Years shipping" },
-  { value: "7", label: "Featured builds" },
+  { value: "10", label: "Featured builds" },
   { value: "3", label: "Core disciplines" },
   { value: "20+", label: "Technologies" },
 ];
