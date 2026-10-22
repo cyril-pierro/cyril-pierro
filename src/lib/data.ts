@@ -267,6 +267,24 @@ export const linkedinPosts: LinkedInPost[] = [
     dateTime: "2025-02-14",
     url: "https://www.linkedin.com/posts/per-badasu-3380a9247_for-valentines-day-i-developed-a-selfie-ugcPost-7296246692901748736-MQMK/",
   },
+  {
+    title: "ProductHubAPI: gRPC Microservices Across Python & Go",
+    summary:
+      "A microservice demo built for full-duplex data communication over HTTP/2 — combining gRPC, Python, Go, and FastAPI to show how a multi-language stack tailors each service to its needs.",
+    tags: ["gRPC", "Python", "Go", "FastAPI", "HTTP/2", "Microservices"],
+    date: "1 Jan 2024",
+    dateTime: "2024-01-01",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_modern-software-development-necessitates-ugcPost-7147659180923932672-IpnB/",
+  },
+  {
+    title: "OpenCV + Arduino: Computer Vision for Consumer IoT",
+    summary:
+      "A demo project bridging computer vision and embedded systems for consumer products — pairing OpenCV with Arduino to turn camera input into physical, real-world interactions.",
+    tags: ["OpenCV", "Arduino", "Computer Vision", "IoT", "Embedded"],
+    date: "28 Dec 2023",
+    dateTime: "2023-12-28",
+    url: "https://www.linkedin.com/posts/per-badasu-3380a9247_in-todays-tech-landscape-seamless-integration-ugcPost-7146093102779318272-1RFe/",
+  },
 ];
 
 export function withCampaign(url: string) {
